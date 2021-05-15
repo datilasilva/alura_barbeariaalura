@@ -263,7 +263,7 @@ td, th {
 Meta tag de Viewport
 Media Queries*/
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
     .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
         width: auto;
     }
@@ -275,15 +275,32 @@ Media Queries*/
         position: static;
     }
 
+    nav a {
+        color: #000000;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 17px;
+        text-decoration: none;
+    }
+
+    .principal, .lista-beneficios {
+        margin: 3%;
+        padding: 0%;
+    }
+
     .lista-beneficios, .imagem-beneficios{
         width: 100%;
     }
+
+    .produtos li {
+        display: block;
+        text-align: center;
+        width: 30%;
+        box-sizing: border-box;
+        border: 2px solid #000000;
+        border-radius: 10%;
+        margin: 2% 10%;
 }
-
-
-
-
-
 
 
 /* 
@@ -294,4 +311,4 @@ active, quando um elemento está sendo ativado pelo usuário
 tabela Unicode
 ===============
 float:left quanto o float: right servem para que o elemento se destaque na tela, 
-deixe de ocupar o espaço em que estava, para que os outros elementos possam se posicionar ao redor dele
+deixe de ocupar o espaço em que estava, para que os outros elementos possam se posicionar ao redor dele */
