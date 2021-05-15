@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="apple-touch-icon"  href>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+            <link rel="stylesheet" href="reset.css">
+            <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="style.css">
+            <title>Barbearia Alura</title>
+          </head>
+    <body>
+        <header>
+            <div class="caixa">
+                <h1><img src="logo.png" </h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li> <a href="contato.html">Contato</a></li>
+                        <li><a href="depoimento.html">Depoimento</a></li>
+                        
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <ul class="produtos">
+                <li>
+                    <h2>Cabelo</h2>
+                    <img src="cabelo.jpg">
+                    <p class="produto-descricao">Na tesoura ou máquina, como o cliente preferir</p>
+                    <p class="produto-preco">R$ 25,00</p>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" style="background-color: rgb(97, 95, 95); border-color: darkgray;">Quero!</button>
+                </li>
+                <li>
+                    <h2>Barba</h2>
+                    <img src="barba.jpg">
+                    <p class="produto-descricao">Corte e desenho profissional de barba</p>
+                    <p class="produto-preco">R$ 18,00</p>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" style="background-color: rgb(97, 95, 95); border-color: darkgray;">Quero!</button>
+                </li>
+                <li>
+                    <h2>Cabelo + Barba</h2>
+                    <img src="cabelo+barba.jpg">
+                    <p class="produto-descricao">Pacote completo de cabelo e barba</p>
+                    <p class="produto-preco">R$ 35,00</p>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" style="background-color: rgb(97, 95, 95); border-color: darkgray;">Quero!</button>
+                </li>
+            </ul>
+        </main>
+
+         <!-- Modal - início -->
+         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Descrição do pedido</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                        <form class="main_contato">
+                            <label for="nomesobrenome">Nome  e sobrenome</label>
+                            <input type="text" id="nomesobrenome" required>
+            
+                            <label for="email">Email</label>
+                            <input type="email" id="email" required placeholder="seuemail@dominio.com">
+            
+                            <label for="telefone">Telefone</label>
+                            <input type="tel" id="telefone"required placeholder="(XX) XXX-XXX">
+            
+                            <label for="mensagem">Alguma informação adicional?</label>
+                            <textarea cols="70" rows="10" id="mensagem" class="input-padrao"></textarea>
+
+                            <fieldset>
+                                <legend>Confirme abaixo o tratamento escolhido</legend>
+                                <select>
+                                    <option>Cabelo</option>
+                                    <option>Barba</option>
+                                    <option>Bigode</option>
+                                </select>
+                            </fieldset>
+            
+                            <fieldset>
+                                <legend>Como prefere o nosso contato?</legend>
+                                <label for="radio-email">
+                                    <input type="radio" name="contato" value="email" id="radio-email">
+                                    Email
+                                </label>
+                            
+                                <label for="radio-telefone">
+                                    <input type="radio" name="contato" value="telefone" id="radio-telefone"> 
+                                    Telefone
+                                </label>
+                            
+                                <label for="radio-whatsapp">
+                                    <input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked>
+                                    WhatsApp
+                                </label>
+                            </fieldset>
+                                    
+                            <input id="botaoEnviar_produto" type="submit" value="Adquirir">
+                        </form>
+                        <script type="text/javascript"src="script_produto.js"></script>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-- Modal - Fim -->
+        
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        
+        <footer>
+            <img src="logo-branco.png">
+            <p class="copyright">&copy; Copyright Barbearia Alura - 2021</p>
+        </footer>
+       
+    </body>
+</html>

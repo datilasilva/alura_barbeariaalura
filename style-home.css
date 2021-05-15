@@ -1,0 +1,60 @@
+.principal{
+    background: #CCCCCC;
+    padding: 30px;
+}
+
+p{
+    text-align: center;  
+}
+ 
+#banner{
+    width: 100%;
+}
+ em strong{
+     color: red;
+ }
+
+ #missao{
+     font-size: 20px;
+ }
+ .itens {
+    font-style: italic
+}
+
+.beneficios {
+    background: #FFFFFF;
+    padding: 20px;
+}
+
+ul {
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin-right: 15%;
+}
+
+.imagembeneficios {
+    width: 50%;
+}
+.titulo-principal {
+    padding-left: 20px;
+}
+.titulo-centralizado {
+    text-align: center
+}
+
+
+ /* 
+ ----------------------------------------------------------------
+Como ajustar a altura do elemento, através da propriedade height
+Como ajustar a largura do elemento, através da propriedade width
+Como ajustar o espaçamento interno do elemento, através da propriedade padding
+Como ajustar o espaçamento externo do elemento, através da propriedade margin
+ ----------------------------------------------------------------
+A mexer na apresentação dos textos
+No alinhamento deles (text-align)
+No tamanho da fonte (font-size)
+Na cor de fundo (background)
+Na cor do texto (color)
+ ----------------------------------------------------------------
+ 

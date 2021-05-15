@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+        <title>Barbearia Alura</title>
+    </head>
+    <body>
+        <header>
+            <div class="caixa">
+                <h1><img src="logo.png" alt="Logo da Barbearia Alura"></h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                        <li><a href="depoimento.html">Depoimento</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <form>
+                <label for="nomesobrenome">Conte sua experiência com nossa empresa!</label>
+                <input type="text" id="nomesobrenome" required placeholder="Digite aqui seu nome nome">
+
+                <label for="mensagem">Depoimento</label>
+                <textarea cols="70" rows="10" id="mensagem" class="input-padrao"></textarea>
+
+                <label class="checkbox">
+                    <input type="checkbox" checked>
+                    Gostaria de receber nossas novidades por email?
+                </label>
+
+                <input id="botaoEnviar_depoimento" type="submit" value="Enviar formulário">
+            </form>
+            <script type="text/javascript"src="script_depoimento.js"></script>
+        </main>
+
+        <footer>
+            <img src="logo-branco.png " alt="Logo da Barbearia Alura">
+            <p class="copyright">&copy; Copyright Barbearia Alura - 2021</p>
+        </footer>
+    </body>
+</html>
